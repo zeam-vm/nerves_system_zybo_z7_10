@@ -18,3 +18,10 @@ follows:
   * [nerves_system_br v1.24.1](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.24.1)
   * [Erlang/OTP 26.1.1](https://erlang.org/download/OTP-26.1.1.README)
   * [Buildroot 2023.05.3](https://lore.kernel.org/buildroot/87h6ngup34.fsf@48ers.dk/T/)
+
+### This system uses followings,
+
+* https://github.com/Digilent/linux-digilent 's digilent_rebase_v5.15_LTS_2022.1 branch for Linux kernel.
+* https://github.com/Digilent/u-boot-digilent 's digilent_rebase_v2022.01 branch for U-boot.
+
+To pin the sources, we download the tarballs from a specific commit on the branch.
