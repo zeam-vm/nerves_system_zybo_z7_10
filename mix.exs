@@ -94,6 +94,7 @@ defmodule NervesSystemZyboZ710.MixProject do
       "fwup_include",
       "linux",
       "rootfs_overlay",
+      "u-boot",
       "CHANGELOG.md",
       "fwup-ops.conf",
       "fwup.conf",
