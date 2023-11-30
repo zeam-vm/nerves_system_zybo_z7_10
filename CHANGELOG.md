@@ -14,7 +14,7 @@ follows:
 
 ## v0.0.1
 
-* Package updates
+* Packages
   * [nerves_system_br v1.24.1](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.24.1)
   * [Erlang/OTP 26.1.1](https://erlang.org/download/OTP-26.1.1.README)
   * [Buildroot 2023.05.3](https://lore.kernel.org/buildroot/87h6ngup34.fsf@48ers.dk/T/)
