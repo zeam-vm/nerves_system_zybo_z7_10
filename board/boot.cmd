@@ -5,7 +5,7 @@
 ################
 kernel_name=zImage
 
-setenv bootargs console=ttyPS0,115200 earlyprintk uio_pdrv_genirq.of_id=generic-uio root=/dev/mmcblk0p2 rootwait
+setenv bootargs console=ttyPS0,115200 uio_pdrv_genirq.of_id=generic-uio root=/dev/mmcblk0p2 rootwait
 
 for boot_target in ${boot_targets};
 do
