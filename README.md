@@ -11,16 +11,16 @@ This is the base Nerves System configuration for the Zybo Z7-10.
 | Storage              | MicroSD                                                     |
 | Linux kernel         | 5.15                                                        |
 | IEx terminal         | HDMI and USB keyboard (can be changed to UART)              |
-| GPIO, I2C, SPI       | Yes - [Elixir Circuits](https://github.com/elixir-circuits) |
-| ADC                  | No                                                          |
-| PWM                  | ?                                                           |
+| GPIO, I2C            | Yes - [Elixir Circuits](https://github.com/elixir-circuits) |
+| ADC                  | No, in this project's Bitstream                             |
+| PWM                  | No, in this project's Bitstream                             |
 | UART                 | 1 available - `ttyPS0`                                      |
 | Display              | HDMI                                                        |
-| Camera               | ?                                                           |
+| Camera               | No, in this project's Bitstream                             |
 | Ethernet             | Yes                                                         |
 | WiFi                 | No                                                          |
 | Bluetooth            | No                                                          |
-| Audio                | ?                                                           |
+| Audio                | Yes                                                         |
 
 ## Using
 
@@ -125,9 +125,24 @@ git submodule update --init --recursive
 2. Click Tools -> Run Tcl Script...
 3. Select Zybo-Z7/hw/scripts/checkout.tcl and click OK
 4. **Fix MIO 50 and 51 pullup, from enable to disable**
-5. Generate Bitstream
+5. Generate Bitstream   
+   Critical warnings related to dvi2rgb occurs,  
+   but it only affects HDMI-in and has no effect on anything else, so we ignore them.
 6. Export XSA
 7. Create platform for the XSA
 8. Build FSBL
 
 <img src="assets/images/fix-mio-pullup.png">
+
+### Overwriting Files in the Boot Partition
+
+see. [Nerves Advanced Configuration](https://hexdocs.pm/nerves/advanced-configuration.html#overwriting-files-in-the-boot-partition)
+
+## About UIO
+
+- LD0-3  are binded with /dev/uio0
+- SW0-3  are binded with /dev/uio1's GPIO
+- BTN0-3 are binded with /dev/uio1's GPIO2
+- LD6     is binded with /dev/uio4
+
+see. [UIOSAMPLE.md](UIOSAMPLE.md)
