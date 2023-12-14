@@ -104,6 +104,7 @@ defmodule NervesSystemZyboZ710.MixProject do
       "post-build.sh",
       "post-createfs.sh",
       "README.md",
+      "UIOSAMPLE.md",
       "VERSION"
     ]
   end
