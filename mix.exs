@@ -1,7 +1,7 @@
 defmodule NervesSystemZyboZ710.MixProject do
   use Mix.Project
 
-  @github_organization "pojiro"
+  @github_organization "zeam-vm"
   @app :nerves_system_zybo_z7_10
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
