@@ -71,7 +71,7 @@ defmodule NervesSystemZyboZ710.MixProject do
 
   defp docs do
     [
-      extras: ["README.md", "CHANGELOG.md"],
+      extras: ["README.md", "UIOSAMPLE.md", "CHANGELOG.md"],
       main: "readme",
       assets: "assets",
       source_ref: "v#{@version}",
