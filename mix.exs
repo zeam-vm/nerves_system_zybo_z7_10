@@ -58,7 +58,7 @@ defmodule NervesSystemZyboZ710.MixProject do
         {"TARGET_OS", "linux"},
         {"TARGET_ABI", "gnueabihf"},
         {"TARGET_GCC_FLAGS",
-         "-mabi=aapcs-linux -mfpu=neon -marm -fstack-protector-strong mfloat-abi=hard -mcpu=cortex-a9 -fPIE -pie -Wl,-z,now -Wl,-z,relro"}
+         "-mabi=aapcs-linux -mfpu=neon -marm -fstack-protector-strong -mfloat-abi=hard -mcpu=cortex-a9 -fPIE -pie -Wl,-z,now -Wl,-z,relro"}
       ],
       checksum: package_files()
     ]
