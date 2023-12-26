@@ -12,6 +12,10 @@ follows:
    releases, and Linux kernel updates. They're also made to fix bugs and add
    features to the build infrastructure.
 
+## v0.1.0
+
+Support loading Bitstream and dtbo, by using configfs.
+
 ## v0.0.2
 
 This is a major Buildroot and toolchain update.
