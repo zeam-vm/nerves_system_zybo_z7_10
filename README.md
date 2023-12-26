@@ -146,3 +146,14 @@ see. [Nerves Advanced Configuration](https://hexdocs.pm/nerves/advanced-configur
 - LD6     is binded with /dev/uio4
 
 see. [UIOSAMPLE.md](UIOSAMPLE.md)
+
+## Loading Bitstream and dtbo at Linux runtime
+
+1. upload Bitstream and dtbo to /tmp by sftp
+2. invoke following,
+
+```
+iex> cmd "cp /tmp/your_bitstream.bit.bit /lib/firmware"
+iex> cmd "mkdir /configfs/device-tree/overlays/your_overlay"
+iex> cmd "cat /tmp/your_overlay.dtbo > /configfs/device-tree/overlays/your_overlay/dtbo"
+```
